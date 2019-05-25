@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Welcome Death Lord"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:id="@+id/scoring"
+        android:textSize="24sp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invalid"
+        android:layout_above="@id/messageBox"
+        android:paddingBottom="64dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Age -"
+        android:id="@+id/messageBox"
+        android:textSize="24sp"
+        android:layout_above="@id/editText"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="1 to 100"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:onClick="submit"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access Admin Panel"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="adminPanel"/>
+
+</RelativeLayout>

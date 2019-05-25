@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:text="Admin Panel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/editText2"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:text="Enter Optimal Number of Guesses"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Optimal Guesses"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="setMax"
+        android:text="Set" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset score card"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button"
+        android:onClick="reset"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button2"
+        android:text="Back"
+        android:onClick="main"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

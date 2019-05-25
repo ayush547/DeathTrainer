@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Lady of Death"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/titleDaughter"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="16dp"
+        android:textSize="16sp"
+        android:id="@+id/noOfTries"
+        android:layout_below="@id/titleDaughter"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/input"
+        android:textSize="24sp"
+        android:layout_marginBottom="64dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invalDaughter"
+        android:layout_above="@id/result"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="Enter Age -"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/input"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Submit"
+        android:onClick="checker"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input"/>
+</RelativeLayout>
