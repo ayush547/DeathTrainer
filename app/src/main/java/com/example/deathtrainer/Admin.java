@@ -19,8 +19,10 @@ public class Admin extends AppCompatActivity {
 
     public void setMax(View view)
     {
+        int maxTrials=7;
         EditText editText = findViewById(R.id.editText2);
-        int maxTrials = Integer.parseInt(editText.getText().toString());
+        if(Integer.parseInt("0"+editText.getText().toString())!=0)
+            maxTrials = Integer.parseInt(editText.getText().toString());
         preferencesConfig.writeMaxTrials(maxTrials);
     }
 
